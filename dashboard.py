@@ -114,9 +114,6 @@ if option == "Daily_review":
     
     url = "https://www.sectorspdrs.com/sectortracker"
     st.write("SPDR Sectors [link](%s)" % url)
-        
-    url = "https://stockcharts.com/freecharts/rrg/?s=VTI,QQQ,DIA,IWO,SMH,IGV,CIBR,IBIT,XME,GLD,XHB,XLB,XLC,XLE,XLF,XLI,XLK,XLP,XLRE,XLU,XLV,XLY,SDS,XOP,BLOK,ARKK,FFTY,AIQ&b=SPY&p=w&g=1y&t=6&c=false&f=chg,d"
-    st.write("SPDR Sectors RRG [link](%s)" % url)
 
     url = "https://docs.google.com/spreadsheets/d/1RpSHUC1gj3bnO4MdmoMgBwdCFIXsCQ-m21ESh63hVaI/edit?usp=sharing"
     st.write("PANCHAYAT PORTFOLIO [link](%s)" % url)
@@ -134,8 +131,10 @@ if option == "Daily_review":
     
     
     SPDR = {
-        'DAILY' : ['SPY', 'QQQ', 'DIA',  'IWO', 'VTI', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'CIBR', 'VGT', 'TAN', 'FFTY', 'IBIT', 'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'TSLA', 'AMD', 'COST', 'AVGO', 'MU', 'TSM', 'ASML', 
-                   'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'BLOK', 'PAVE', 'JETS', 'XLG', 'IVV', 'IJH', 'IJR', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV' ],
+        'DAILY' : ['SPY', 'QQQ', 'DIA',  'IWO', 'VTI', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'CIBR', 'VGT', 'FFTY', 'IBIT', 
+                   'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'BLOK', 'PAVE', 'JETS', 'IVV', 'IJH', 'IJR', 'GLD',
+                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'TSLA', 'AMD', 'COST', 'AVGO', 'MU', 'TSM', 'ASML', 
+                    'XLG', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV', 'TAN', 'ARKK' ],
         'XLK': ['MSFT', 'AAPL', 'AVGO', 'NVDA', 'CRM', 'AMD', 'ADBE', 'ACN', 'ORCL', 'CSCO', 'QCOM', 'INTU', 'IBM', 'AMAT', 'INTC', 'NOW', 'TXN', 'MU', 'LRCX', 'ADI'],
         'XLC': ['META', 'GOOGL', 'GOOG', 'NFLX', 'VZ', 'T', 'TMUS', 'EA', 'DIS', 'CMCSA', 'CHTR', 'TTWO', 'WBD', 'OMC', 'LYV', 'IPG', 'NWSA', 'MTCH', 'FOXA', 'PARA'],
         'XLY': ['AMZN', 'TSLA', 'HD', 'MCD', 'LOW', 'BKNG', 'TJX', 'NKE', 'SBUX', 'CMG', 'ABNB', 'ORLY', 'MAR', 'AZO', 'HLT', 'F', 'GM', 'DHI', 'ROST', 'LULU'],
