@@ -11,42 +11,21 @@ st.set_page_config(
 
 #st.title("Stock Tracking Dashboard")
 
-option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'Current_watchlist', 'ETF', 'SPQQ100', 'Old_Daily_review'))
+option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'Current_watchlist', 'ETF', 'SPQQ100'))
 
 timing = st.sidebar.selectbox("What Timeframe?", ('Daily', 'Hourly', 'Weekly', 'Multi'))
 
 st.header("STOCK MARKET DASHBOARD")
 
 
-if option == "Old_Daily_review":
-    symbols=['SPY', 'QQQ', 'DIA',  'IWO', 'VTI', 'RSP', 'QQQE', 'SDS', 'XLK', 'SMH', 'IGV', 'CIBR', 'VGT', 'TAN', 'FFTY', 'IBIT', 
-             'XLF', 'XLE', 'XLP', 'XLV', 'XLI', 'XLK', 'XLC', 'XLU', 'XLY', 'XLB', 'XOP', 'XHB', 'XME', 'OIH', 'ITB', 'PAVE', 'JETS', 'XBI', 'GDX', 'GDXJ',
-             'ARKK', 'BLOK', 'AIQ', 'WCLD', 'BOTZ', 'IPAY',  'SOXL', 'SSO', 'QLD', 'TQQQ', 'SQQQ', 'FNGU', 'XLG', 'IVV', 'IJH', 'IJR', 'IDEV', 'IEMG', 'AGG', 'TLT', 'FTEC', 'FDN',
-             'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NFLX', 'NVDA', 'TSLA', 'AMD', 'COST', 'NOW', 'AVGO', 
-             'ASML', 'LRCX', 'AMAT', 'QCOM', 'TSM', 'ARM', 'SMCI', 'ANET', 'PANW', 'CRWD', 'UBER', 'COIN', 'ZS', 
-               ]
-
-    if timing == "Daily":
-        for stock in symbols:
-            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=ema&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=ema&o[2][op]=21&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
-            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d")
-
-    if timing == "Weekly":
-        for stock in symbols:
-            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=40&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=30&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=10&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
-            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=ema&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=ema&o[2][op]=21&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
-
-    if timing == "Multi":
-        for stock in symbols:
-            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=m&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=5&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=20&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
-            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=40&o[0][oc]=FF8F33C6&o[1][ot]=sma&o[1][op]=30&o[1][oc]=DCB3326D&o[2][ot]=sma&o[2][op]=10&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
-            st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=ema&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=ema&o[2][op]=21&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
-
-
 if option == "Current_watchlist":
     with open('daily') as f:
         symbols=[i.strip() for i in f.readlines()]
 
+    if timing == "Hourly":
+        for stock in symbols:
+            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
+    
     if timing == "Daily":
         for stock in symbols:
             st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=ema&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=ema&o[2][op]=21&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
@@ -70,6 +49,10 @@ if option == "ETF":
         symbols=[i.strip() for i in f.readlines()]
         symbols = list(dict.fromkeys(symbols))
 
+    if timing == "Hourly":
+        for stock in symbols:
+            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")        
+
     if timing == "Daily":
         for stock in symbols:
             st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=ema&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=ema&o[2][op]=21&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
@@ -90,6 +73,10 @@ if option == "SPQQ100":
     with open('master') as f:
         symbols=[i.strip() for i in f.readlines()]
         symbols = list(dict.fromkeys(symbols))
+
+    if timing == "Hourly":
+        for stock in symbols:
+            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")    
 
     if timing == "Daily":
         for stock in symbols:
@@ -176,7 +163,6 @@ if option == "Daily_review":
                 
                 if timing == "Daily":
                     for stock in symbols:
-                        st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
                         st.image(f"https://charts2-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF8F33C6&o[1][ot]=ema&o[1][op]=10&o[1][oc]=DCB3326D&o[2][ot]=ema&o[2][op]=21&o[2][oc]=DC32B363&o[3][ot]=patterns&o[3][op]=&o[3][oc]=000")
                         
 
