@@ -18,7 +18,7 @@ timing = st.sidebar.selectbox("What Timeframe?", ('Daily', 'Hourly', 'Weekly', '
 st.header("STOCK MARKET DASHBOARD")
 
 
-if option == "Current_watchlist":
+if option == "DNS_watchlist":
     with open('daily') as f:
         symbols=[i.strip() for i in f.readlines()]
 
