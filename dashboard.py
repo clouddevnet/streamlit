@@ -120,7 +120,7 @@ if option == "Daily_review":
     
     SPDR = {
         'DAILY' : ['SPY', 'QQQ', 'DIA', 'IWO', 'VTI', 'VGT', 'XLK', 'SMH', 'IGV', 'CIBR', 'FFTY', 'IBIT', 'RSP', 'QQQE', 'SDS',
-                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'TSLA', 'NFLX', 'AMD', 'COST', 'AVGO', 'MU', 'TSM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'CRWD', 'PANW', 'ANET', 'NTAP],
+                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'TSLA', 'NFLX', 'AMD', 'COST', 'AVGO', 'MU', 'TSM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'CRWD', 'PANW', 'ANET', 'NTAP'],
         'ETF' : ['XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'BLOK', 'PAVE', 'JETS', 'IVV', 'IJH', 'IJR', 'IAG',
                     'XLG', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV', 'TAN', 'ARKK'],
         'XLK': ['MSFT', 'AAPL', 'AVGO', 'NVDA', 'CRM', 'AMD', 'ADBE', 'ACN', 'ORCL', 'CSCO', 'QCOM', 'INTU', 'IBM', 'AMAT', 'INTC', 'NOW', 'TXN', 'MU', 'LRCX', 'ADI'],
