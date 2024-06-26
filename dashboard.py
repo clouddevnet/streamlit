@@ -13,7 +13,7 @@ st.set_page_config(
 
 option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'DNS_watchlist', 'ETF'))
 
-timing = st.sidebar.selectbox("What Timeframe?", ('Daily', 'Hourly', 'Weekly', 'Multi'))
+timing = st.sidebar.selectbox("What Timeframe?", ('Hourly', 'Daily',  'Weekly', 'Multi'))
 
 st.header("STOCK MARKET DASHBOARD")
 
@@ -119,8 +119,8 @@ if option == "Daily_review":
     
     
     SPDR = {
-        'DAILY' : ['SPY', 'QQQ', 'VTI', 'VGT', 'XLK', 'SMH', 'IGV', 'CIBR', 'FFTY', 'IBIT', 'RSP', 'QQQE', 'DIA', 'IWO', 'IVV', 'IJH', 'IJR', 'SDS',
-                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'TSLA', 'NFLX', 'AMD', 'COST', 'AVGO', 'MU', 'TSM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'CRWD', 'PANW', 'ANET', 'NTAP'],
+        'DAILY' : ['SPY', 'QQQ', 'VTI', 'VGT', 'XLK', 'SMH', 'IGV', 'CIBR', 'FFTY', 'IBIT', 'RSP', 'QQQE', 'DIA', 'IWO', 'SDS',
+                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'AMD', 'COST', 'TSLA', 'NFLX', 'AVGO', 'TSM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'ARM', 'CRWD', 'PANW', 'ANET', 'MU', 'NTAP'],
         'ETF' : ['XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'BLOK', 'PAVE', 'JETS', 'IVV', 'IJH', 'IJR', 'IAG',
                     'XLG', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV', 'TAN', 'ARKK'],
         'XLK': ['MSFT', 'AAPL', 'AVGO', 'NVDA', 'CRM', 'AMD', 'ADBE', 'ACN', 'ORCL', 'CSCO', 'QCOM', 'INTU', 'IBM', 'AMAT', 'INTC', 'NOW', 'TXN', 'MU', 'LRCX', 'ADI'],
