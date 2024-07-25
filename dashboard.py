@@ -121,9 +121,9 @@ if option == "Daily_review":
     
     
     SPDR = {
-        'DAILY' : ['SPY', 'QQQ', 'VTI', 'VGT', 'XLK', 'SMH', 'IGV', 'CIBR', 'FFTY', 'IBIT', 'RSP', 'QQQE', 'DIA', 'IWO', 'SDS',
-                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'AMD', 'COST', 'TSLA', 'NFLX', 'AVGO', 'TSM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'ARM', 'CRWD', 'PANW', 'ANET', 'MU', 'NTAP'],
-        'ETF' : ['XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'BLOK', 'PAVE', 'JETS', 'IVV', 'IJH', 'IJR', 'IAG',
+        'DAILY' : ['SPY', 'QQQ', 'DIA', 'IWO', 'VTI', 'XLK', 'SMH', 'IGV', 'CIBR', 'SKYY', 'FFTY', 'IBIT', 'RSP', 'QQQE', 'XLG', 'VGT', 'SDS',
+                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'AMD', 'COST', 'TSLA', 'NFLX', 'AVGO', 'ADBE', 'TSM', 'ARM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'ARM', 'CRWD', 'PANW', 'ANET', 'MU', 'NOW'],
+        'ETF' : ['XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'AIQ', 'BLOK', 'PAVE', 'JETS', 'IVV', 'IJH', 'IJR', 'IAG',
                     'XLG', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV', 'TAN', 'ARKK'],
         'XLK': ['MSFT', 'AAPL', 'AVGO', 'NVDA', 'CRM', 'AMD', 'ADBE', 'ACN', 'ORCL', 'CSCO', 'QCOM', 'INTU', 'IBM', 'AMAT', 'INTC', 'NOW', 'TXN', 'MU', 'LRCX', 'ADI'],
         'XLC': ['META', 'GOOGL', 'GOOG', 'NFLX', 'VZ', 'T', 'TMUS', 'EA', 'DIS', 'CMCSA', 'CHTR', 'TTWO', 'WBD', 'OMC', 'LYV', 'IPG', 'NWSA', 'MTCH', 'FOXA', 'PARA'],
