@@ -33,7 +33,7 @@ if option == "SPYQQ100":
 
     if timing == "Weekly":
         for stock in symbols:
-            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
+            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
             st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
             st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
 
@@ -58,7 +58,7 @@ if option == "XLKSMHIGV":
 
     if timing == "Weekly":
         for stock in symbols:
-            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
+            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
             st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
             st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
 
@@ -85,7 +85,7 @@ if option == "ETF":
 
     if timing == "Weekly":
         for stock in symbols:
-            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
+            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
             st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
             st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
 
@@ -122,7 +122,7 @@ if option == "Daily_review":
     
     SPDR = {
         'DAILY' : ['SPY', 'QQQ', 'DIA', 'IWO', 'VTI', 'XLK', 'SMH', 'IGV', 'CIBR', 'SKYY', 'FFTY', 'IBIT', 'RSP', 'QQQE', 'XLG', 'VGT', 'SDS',
-                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'AMD', 'COST', 'TSLA', 'NFLX', 'AVGO', 'ADBE', 'TSM', 'ARM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'ARM', 'CRWD', 'PANW', 'ANET', 'MU', 'NOW'],
+                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'AMD', 'COST', 'TSLA', 'NFLX', 'AVGO', 'ADBE', 'ANET', 'ARM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'ARM', 'CRWD', 'PANW', 'LLY', 'TSM', 'NOW'],
         'ETF' : ['XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'AIQ', 'BLOK', 'PAVE', 'JETS', 'IVV', 'IJH', 'IJR', 'IAG',
                     'XLG', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV', 'TAN', 'ARKK'],
         'XLK': ['MSFT', 'AAPL', 'AVGO', 'NVDA', 'CRM', 'AMD', 'ADBE', 'ACN', 'ORCL', 'CSCO', 'QCOM', 'INTU', 'IBM', 'AMAT', 'INTC', 'NOW', 'TXN', 'MU', 'LRCX', 'ADI'],
@@ -171,7 +171,7 @@ if option == "Daily_review":
 
                 if timing == "Weekly":
                     for stock in symbols:
-                        st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
+                        st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
                         st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
                         st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=w&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
 
