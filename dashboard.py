@@ -12,6 +12,17 @@ st.set_page_config(
 #st.title("Stock Tracking Dashboard")
 st.header("STOCK MARKET DASHBOARD")
 
+st.write("MARKET RESEARCH")
+
+url = "https://finviz.com/groups.ashx?g=sector&v=210&o=name"
+st.write("FINVIZ Groups [link](%s)" % url)
+    
+url = "https://www.sectorspdrs.com/sectortracker"
+st.write("SPDR Sectors [link](%s)" % url)
+
+url = "https://docs.google.com/spreadsheets/d/1RpSHUC1gj3bnO4MdmoMgBwdCFIXsCQ-m21ESh63hVaI/edit?usp=sharing"
+st.write("PANCHAYAT PORTFOLIO [link](%s)" % url)
+
 option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'SPYQQ100', 'XLKSMHIGV',  'ETF'))
 
 #timing = st.sidebar.selectbox("What Timeframe?", ('Hourly', 'Daily',  'Weekly', 'Multi'))
@@ -98,16 +109,6 @@ if option == "ETF":
 
 
 if option == "Daily_review":
-    st.write("MARKET RESEARCH")
-
-    url = "https://finviz.com/groups.ashx?g=sector&v=210&o=name"
-    st.write("FINVIZ Groups [link](%s)" % url)
-    
-    url = "https://www.sectorspdrs.com/sectortracker"
-    st.write("SPDR Sectors [link](%s)" % url)
-
-    url = "https://docs.google.com/spreadsheets/d/1RpSHUC1gj3bnO4MdmoMgBwdCFIXsCQ-m21ESh63hVaI/edit?usp=sharing"
-    st.write("PANCHAYAT PORTFOLIO [link](%s)" % url)
 
     options = st.selectbox(
         'Pick the SPDR sectors',
