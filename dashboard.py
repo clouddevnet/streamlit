@@ -10,14 +10,13 @@ st.set_page_config(
 )
 
 #st.title("Stock Tracking Dashboard")
+st.header("STOCK MARKET DASHBOARD")
 
 option = st.sidebar.selectbox("Watchlist?", ('Daily_review', 'SPYQQ100', 'XLKSMHIGV',  'ETF'))
 
 #timing = st.sidebar.selectbox("What Timeframe?", ('Hourly', 'Daily',  'Weekly', 'Multi'))
 
-timing = st.radio( "Pick Timeframe", ('Hourly', 'Daily',  'Weekly', 'Multi'))
-
-st.header("STOCK MARKET DASHBOARD")
+timing = st.radio( "Pick Timeframe", ('Hourly', 'Daily',  'Weekly', 'Multi'), horizontal=True)
 
 
 if option == "SPYQQ100":
