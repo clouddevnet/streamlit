@@ -179,7 +179,7 @@ if option == "Daily_review":
                     for stock in symbols:
                     #st.write(stock)
                         with col1:
-                            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
+                            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={spdr_sector}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
                         with col2:
                             st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
 
