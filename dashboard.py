@@ -134,7 +134,7 @@ if option == "Daily_review":
     
     SPDR = {
         'DAILY' : ['SPY', 'QQQ', 'DIA', 'IWO', 'VTI', 'XLK', 'SMH', 'IGV', 'CIBR', 'SKYY', 'FFTY', 'IBIT', 'RSP', 'QQQE', 'XLG', 'VGT', 'SDS',
-                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'AMD', 'COST', 'TSLA', 'NFLX', 'AVGO', 'ADBE', 'ANET', 'ARM', 'ASML', 'LRCX', 'AMAT', 'KLAC', 'QCOM', 'ARM', 'CRWD', 'PANW', 'LLY', 'TSM', 'NOW'],
+                   'AAPL', 'AMZN', 'MSFT', 'GOOGL', 'META', 'NVDA', 'AMD', 'COST', 'TSLA', 'NFLX', 'AVGO', 'ADBE', 'ANET', 'ARM', 'ASML', 'LRCX', 'AMAT', 'PANW', 'LLY', 'TSM', 'NOW'],
         'ETF' : ['XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'XBI', 'KRE', 'IBB', 'IBB', 'XRT', 'IYT', 'AIQ', 'BLOK', 'PAVE', 'JETS', 'IVV', 'IJH', 'IJR', 'IAG',
                     'XLG', 'IDEV', 'IEMG', 'AGG', 'BND', 'TLT', 'GLD', 'SLV', 'TAN', 'ARKK'],
         'XLK': ['MSFT', 'AAPL', 'AVGO', 'NVDA', 'CRM', 'AMD', 'ADBE', 'ACN', 'ORCL', 'CSCO', 'QCOM', 'INTU', 'IBM', 'AMAT', 'INTC', 'NOW', 'TXN', 'MU', 'LRCX', 'ADI'],
