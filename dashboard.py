@@ -122,7 +122,7 @@ if option == "Daily_review":
 
     options = st.selectbox(
         'Pick the SPDR sectors',
-        ['SPY', 'XLK', 'SMH', 'IGV', 'CIBR', 'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'TAN', 'BLOK', 'AIQ', 'PAVE', 'JETS' ])
+        ['SPY', 'QQQ', 'XLK', 'SMH', 'IGV', 'CIBR', 'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'TAN', 'BLOK', 'AIQ', 'PAVE', 'JETS' ])
     
     #st.write('You selected:', options)
     
