@@ -1,10 +1,7 @@
 import streamlit as st
 from datetime import datetime, date, timedelta
 import pandas as pd
-from streamlit_autorefresh import st_autorefresh
 
-# update every 5 mins
-st_autorefresh(interval=5 * 60 * 1000, key="dataframerefresh")
 
 st.set_page_config(
     page_title="Stock Tracking Dashboard",
