@@ -121,9 +121,9 @@ if option == "ETF":
 
 if option == "Daily_review":
 
-    options = st.selectbox(
+    options = st.radio(
         'Pick the SPDR sectors',
-        ['SPY', 'QQQ', 'XLK', 'SMH', 'IGV', 'CIBR', 'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'TAN', 'BLOK', 'AIQ', 'PAVE', 'JETS' ])
+        ['SPY', 'QQQ', 'XLK', 'SMH', 'IGV', 'CIBR', 'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'TAN', 'BLOK', 'AIQ', 'PAVE', 'JETS' ], horizontal=True)
     
     #st.write('You selected:', options)
     
