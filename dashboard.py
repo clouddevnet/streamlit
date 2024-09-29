@@ -161,7 +161,7 @@ if option == "Daily_review":
         'BLOK': ['GLXY', 'COIN', 'MSTR', 'BYON', 'PYPL', 'HOOD', 'NU', 'IBM', 'SQ', 'RBLX', 'MARA', 'CLSK', 'CORZ', 'RIOT', 'CME', 'ACN'],
         'AIQ': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'FB', 'TSLA', 'NVDA', 'CRM', 'PYPL', 'ADBE'],
         'PAVE': ['DE', 'CAT', 'UNP', 'EMR', 'JCI', 'NUE', 'FAST', 'VRSK', 'VRSN', 'WAB'],
-        'JETS': ['LUV', 'DAL', 'UAL', 'AAL', 'ALK', 'JBLU', 'SAVE', 'HA', 'SKYW', 'MESA']
+        'JETS': ['LUV', 'DAL', 'UAL', 'AAL', 'ALK', 'JBLU', 'SAVE', 'HA', 'SKYW', 'MESA'],
         'VTI': ["SPY", "QQQ", "DIA", "VTI", "XLK", "SMH", "IGV", "XLC", "XLY", "XLF", "XLV", "XLP", "XLI", "XLB", "XLU", "XLE", "XLRE", "IBIT", "AIQ", "CIBR", "SKYY", "XME", "VNQ", "GDX", "AMLP", "ITB", "OIH", "KRE", "XRT", "MOO", "FDN", "IBB", "XOP", "PBW", "KIE", "PHO", "TAN", "JETS", "IWB", "IWO", "IWF", "QQQE", "RSP", "SDS", "MDY", "GDXJ", "SLV", "GLD", "IAU", "ERX", "USO", "IEO", "SLX", "IAT", "ONLN", "ARKX", "PPH", "IHI", "XAR", "IJH", "IWM", "RTH", "HACK", "BBH", "IVW", "IHAK", "ARKQ", "CLOU", "IDNA", "IDRV", "IBLC", "ROBO", "IBUY", "XHB", "DRIV", "ARKF", "ARKW", "MSOS", "ARKK", "ARKG", "TNA"]
     }
     
