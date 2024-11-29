@@ -123,7 +123,7 @@ if option == "Daily_review":
 
     options = st.radio(
         'Pick the SPDR sectors',
-        ['SPY', 'QQQ', 'XLK', 'SMH', 'IGV', 'CIBR', 'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'TAN', 'BLOK', 'AIQ', 'PAVE', 'JETS', 'VTI' ], horizontal=True)
+        ['SPY', 'QQQ', 'XLK', 'SMH', 'IGV', 'CIBR', 'XLC', 'XLY', 'XLP', 'XLF', 'XLV', 'XLI', 'XLE', 'XLB', 'XLU', 'XOP', 'XHB', 'XME', 'TAN', 'BLOK', 'AIQ', 'PAVE', 'JETS', 'VTI', 'XLG' ], horizontal=True)
     
     #st.write('You selected:', options)
     
@@ -161,6 +161,7 @@ if option == "Daily_review":
         'AIQ': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'FB', 'TSLA', 'NVDA', 'CRM', 'PYPL', 'ADBE'],
         'PAVE': ['DE', 'CAT', 'UNP', 'EMR', 'JCI', 'NUE', 'FAST', 'VRSK', 'VRSN', 'WAB'],
         'JETS': ['LUV', 'DAL', 'UAL', 'AAL', 'ALK', 'JBLU', 'SAVE', 'HA', 'SKYW', 'MESA'],
+        'XLG': ['AAPL', 'NVDA', 'MSFT', 'AMZN', 'META', 'GOOGL', 'GOOG', 'AVGO', 'TSLA', 'LLY', 'JPM', 'UNH', 'XOM', 'V', 'MA', 'HD', 'PG', 'COST', 'JNJ', 'ABBV', 'WMT', 'NFLX', 'CRM', 'BAC', 'ORCL', 'CVX', 'MRK', 'KO', 'AMD', 'PEP', 'CSCO', 'WFC', 'LIN', 'ACN', 'ADBE', 'TMO', 'MCD', 'ABT', 'PM', 'TXN', 'GE', 'CAT', 'QCOM', 'VZ', 'DIS', 'CMCSA', 'DHR', 'PFE', 'NEE', 'AMAT', 'CASH'],
         'VTI': ["SPY", "QQQ", "DIA", "VTI", "XLK", "SMH", "IGV", "XLC", "XLY", "XLF", "XLV", "XLP", "XLI", "XLB", "XLU", "XLE", "XLRE", "IBIT", "AIQ", "CIBR", "SKYY", "XME", "VNQ", "GDX", "AMLP", "ITB", "OIH", "KRE", "XRT", "MOO", "FDN", "IBB", "XOP", "PBW", "KIE", "PHO", "TAN", "JETS", "IWB", "IWO", "IWF", "QQQE", "RSP", "SDS", "MDY", "GDXJ", "SLV", "GLD", "IAU", "ERX", "USO", "IEO", "SLX", "IAT", "ONLN", "ARKX", "PPH", "IHI", "XAR", "IJH", "IWM", "RTH", "HACK", "BBH", "IVW", "IHAK", "ARKQ", "CLOU", "IDNA", "IDRV", "IBLC", "ROBO", "IBUY", "XHB", "DRIV", "ARKF", "ARKW", "MSOS", "ARKK", "ARKG", "TNA"]
     }
     
@@ -181,9 +182,9 @@ if option == "Daily_review":
                     for stock in symbols:
                     #st.write(stock)
                         with col1:
-                            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={spdr_sector}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=ema&o[0][op]=65&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=15&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=30&o[2][oc]=00FF00")
+                            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=d&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
                         with col2:
-                            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=ema&o[0][op]=65&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=15&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=30&o[2][oc]=00FF00")
+                            st.image(f"https://charts-node.finviz.com/chart.ashx?cs=l&t={stock}&tf=h2&s=linear&ct=candle_stick&tm=d&o[0][ot]=sma&o[0][op]=50&o[0][oc]=FF0000&o[1][ot]=ema&o[1][op]=10&o[1][oc]=0077B6&o[2][ot]=ema&o[2][op]=21&o[2][oc]=00FF00")
                 
                 if timing == "Daily":
                     for stock in symbols:
